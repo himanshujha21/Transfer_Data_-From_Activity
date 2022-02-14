@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityOne">
+
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:hint="@string/first_name"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:hint="@string/last_name"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/edtEmailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_id"
+        tools:ignore="LabelFor,TextFields" />
+
+    <EditText
+        android:id="@+id/edtPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:maxLength="10"
+        android:hint="@string/Phone"
+        tools:ignore="LabelFor,TextFields" />
+
+
+    <TextView
+        android:id="@+id/edtGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="Gender"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:layout_weight="1"
+
+
+            />
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:layout_weight="1"
+
+        />
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/click" />
+
+
+
+
+</LinearLayout>
